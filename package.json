@@ -1,0 +1,72 @@
+{
+  "version": "0.1.0",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "src"
+  ],
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "start": "tsdx watch",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "etherspay-package",
+  "author": "Ray Orolé",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/etherspay/etherspay-package.git",
+    "directory": "."
+  },
+  "homepage": "https://etherspay.com",
+  "keywords": [
+    "web3",
+    "ethereum",
+    "etherspay",
+    "bsc",
+    "matic",
+    "payments"
+  ],
+  "description": "Etherspay Javascript SDK",
+  "module": "dist/etherspay-package.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/etherspay-package.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/etherspay-package.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^7.0.8",
+    "@types/jest": "^28.1.4",
+    "@types/node": "^18.0.3",
+    "husky": "^8.0.1",
+    "size-limit": "^7.0.8",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.7.4"
+  }
+}
