@@ -10,7 +10,7 @@
 npm install etherspay # or yarn add etherspay
 ```
 
-> If you’re new to etherspay, read the documentation first
+If you’re new to etherspay, read the documentation first
 
 ## Commands
 
