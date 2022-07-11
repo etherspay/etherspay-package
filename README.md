@@ -1,6 +1,7 @@
 # etherspay - Javascript SDK
 
 [![Node version](https://img.shields.io/node/v/web3.svg?style=flat)](http://nodejs.org/download/)
+[![Node version](https://img.shields.io/github/license/etherspay/etherspay-package)](http://github.com/etherspay)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/etherspay/auth_plug/Elixir%20CI?label=build&style=flat-square)
 
 > This TSDX setup is meant for developing libraries (not apps!) that can be published to NPM. If you’re looking to build a Node app, you could use `ts-node-dev`, plain `ts-node`, or simple `tsc`.
