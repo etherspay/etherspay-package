@@ -14,6 +14,13 @@ npm install etherspay # or yarn add etherspay
 
 If you’re new to etherspay, read the documentation first
 
+## Usage
+
+```typescript
+import { Etherspay } from 'etherspay';
+const etp = new Etherspay('project_secret');
+```
+
 ## Commands
 
 TSDX scaffolds your new library inside `/src`.
