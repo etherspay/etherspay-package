@@ -1,18 +1,15 @@
+import Payments from './lib/payments';
+import Utils from './lib/utils';
+
 export class Etherspay {
-  private props = { project_id: 'null', project_secret: 'null' };
+  private secret: string;
 
-  constructor({
-    project_id,
-    project_secret,
-  }: {
-    project_id: string;
-    project_secret: string;
-  }) {
-    this.props.project_id = project_id;
-    this.props.project_secret = project_secret;
-  }
+  payments: Payments;
+  utils: Utils;
 
-  get_project_id(): string {
-    return this.props.project_id;
+  constructor(project_secret: string) {
+    this.secret = project_secret;
+    this.payments = new Payments(this.secret);
+    this.utils = new Utils();
   }
 }
