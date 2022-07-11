@@ -6,6 +6,8 @@
 
 > This is the official Javascript implementation for the Etherspay SDK
 
+## Installation
+
 ```bash
 npm install etherspay # or yarn add etherspay
 ```
