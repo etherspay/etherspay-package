@@ -17,8 +17,12 @@ If you’re new to etherspay, read the documentation first
 ## Usage
 
 ```typescript
+// In Node.js
 import { Etherspay } from 'etherspay';
 const etp = new Etherspay('project_secret');
+
+// Check version
+console.log(etp.utils.version);
 ```
 
 ## Commands
