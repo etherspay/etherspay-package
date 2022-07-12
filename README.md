@@ -1,10 +1,29 @@
-# TSDX User Guide
+# etherspay - Javascript SDK
 
-Congrats! You just saved yourself hours of work by bootstrapping this project with TSDX. Let’s get you oriented with what’s here and how to use it.
+[![Node version](https://img.shields.io/node/v/web3.svg?style=flat)](http://nodejs.org/download/)
+[![License](https://img.shields.io/github/license/etherspay/etherspay-package)](http://github.com/etherspay/etherspay-package)
+[![Github Workflow](https://img.shields.io/github/workflow/status/etherspay/etherspay/check)](http://github.com/etherspay/etherspay-package)
 
-> This TSDX setup is meant for developing libraries (not apps!) that can be published to NPM. If you’re looking to build a Node app, you could use `ts-node-dev`, plain `ts-node`, or simple `tsc`.
+> This is the official Javascript implementation for the Etherspay SDK
 
-> If you’re new to TypeScript, checkout [this handy cheatsheet](https://devhints.io/typescript)
+## Installation
+
+```bash
+npm install etherspay # or yarn add etherspay
+```
+
+If you’re new to etherspay, read the documentation first
+
+## Usage
+
+```typescript
+// In Node.js
+import { Etherspay } from 'etherspay';
+const etp = new Etherspay('project_secret');
+
+// Check version
+console.log(etp.utils.version);
+```
 
 ## Commands
 
