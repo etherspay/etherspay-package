@@ -10,6 +10,6 @@ export class Etherspay {
   constructor(project_secret: string) {
     this.secret = project_secret;
     this.payments = new Payments(this.secret);
-    this.utils = new Utils();
+    this.utils = new Utils(this.secret);
   }
 }

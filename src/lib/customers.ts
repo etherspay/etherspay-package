@@ -5,7 +5,7 @@ export default class Customers {
     this.secret = project_secret;
   }
 
-  get_payments(): string {
+  get_customers(): string {
     return this.secret;
   }
 }
