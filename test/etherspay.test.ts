@@ -9,6 +9,22 @@ describe('NPM Package info', () => {
   });
 });
 
+describe('etp.balance()', () => {
+  it('Check project balance', async () => {
+    await etp.balance().then(response => {
+      console.log(response);
+    });
+  });
+});
+
+describe('etp.transactions', () => {
+  it('List all transactions', async () => {
+    await etp.transactions.list().then(response => {
+      console.log(response);
+    });
+  });
+});
+
 describe('etp.utils', () => {
   it('Check API status function', async () => {
     await etp.utils.status().then(response => {
